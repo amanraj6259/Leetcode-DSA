@@ -22,3 +22,13 @@ class Solution {
         
     }
 }
+
+/*
+
+| 📝                                                                               | Lambda can only access variables that are `final` or `effectively final` because lambdas capture values, not the variable itself. |
+| -------------------------------------------------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------- |
+| ❌ You tried to modify `maxi` inside the lambda → breaks `effectively final` rule |                                                                                                                                   |
+| ✅ Fix by using loop, mutable wrapper (e.g. array), or streams                    |                                                                                                                                   |
+
+
+*/
